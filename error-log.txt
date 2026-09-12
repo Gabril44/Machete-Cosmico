@@ -1,0 +1,14 @@
+src/tests.lua:5: escaped looter is removed without kill reward
+stack traceback:
+	main.lua:10: in function 'handler'
+	[love "boot.lua"]:352: in function <[love "boot.lua"]:348>
+	[C]: in function 'assert'
+	src/tests.lua:5: in function 'check'
+	src/expansion_tests.lua:20: in function 'run'
+	src/tests.lua:73: in function 'run'
+	main.lua:19: in function 'load'
+	[love "callbacks.lua"]:136: in function <[love "callbacks.lua"]:135>
+	[C]: in function 'xpcall'
+	[love "boot.lua"]:368: in function <[love "boot.lua"]:355>
+	[C]: in function 'xpcall'
+	[love "boot.lua"]:377: in function <[love "boot.lua"]:344>

@@ -1,0 +1,181 @@
+PASS menu starts cinematic
+PASS cinematic pause freezes timeline
+PASS machete drawn after walking
+PASS intro returns control
+PASS pet dog interaction
+PASS more grass required before invasion
+PASS eighteen weeds can be cut
+PASS extended tutorial advances into invasion
+PASS dog turns left
+PASS dog turns right
+PASS dog turns upward
+PASS dog turns downward
+PASS intro skip returns control
+PASS one hit per swing
+PASS hits generate rage
+PASS three hit combo finisher
+PASS berserk activates
+PASS berserk expires
+PASS player takes damage
+PASS damage invulnerability
+PASS dash invulnerability
+PASS captor abduction progress
+PASS removing captor rescues cow
+PASS abduction completes
+PASS gunner fires projectiles
+PASS boss telegraphs attack
+PASS boss radial burst
+PASS third attack telegraphs charge
+PASS charge aim locks before dodge
+PASS sidestep avoids charge and boss recovers
+PASS Moro barks once on recovery
+PASS charge swept collision damages player
+PASS dash invulnerability blocks charge
+PASS normal power resumes after charge
+PASS death state
+PASS restart resets
+PASS all three waves lead to boss
+PASS boss defeat starts visible death sequence
+PASS ending preserves actor positions
+PASS death occurs before abduction
+PASS death burst precedes fleet light
+PASS beam activates before dog lifts
+PASS dog rises independently of stationary ship
+PASS ship leaves after collecting dog
+PASS ending reaches completion screen
+PASS Moro recovery cue is two barks without repetition
+PASS intro walk and handoff are continuous
+PASS keyboard conflict swaps bindings
+PASS controller conflict swaps bindings
+PASS settings roundtrip preserves bindings
+PASS deadzone prevents stick drift
+PASS diagonal stick speed is capped
+PASS old attack key no longer attacks
+PASS rebound key attacks
+PASS controller button starts dash
+PASS controller pauses gameplay
+PASS options accessible from controller pause menu
+PASS trigger can be assigned
+PASS capture can be cancelled
+PASS captured key does not leak into gameplay
+PASS controller returns from pause
+PASS options accessible before starting
+PASS volume changes and settings are saved
+PASS QTE honors rebound keyboard key
+PASS QTE honors rebound controller button and label
+PASS analog stick produces proportional movement
+PASS partial stick moves slower than full stick
+PASS controller dpad moves player
+PASS rebound trigger can drive movement
+PASS captured trigger is blocked until released
+PASS releasing trigger clears input block
+PASS Moro worries at low health
+PASS Moro resumes activities after healing
+PASS preboss affection precedes boss spawn
+PASS preboss affection is protected from attack input
+PASS preboss affection returns to boss gameplay
+PASS field begins calm
+PASS cutting grass reveals approaching shadows
+PASS heavy strike recoils enemy away from player
+PASS departure silence tag and distant bark occur once
+PASS loss changes farmer body posture
+PASS restart resets emotional sequence
+PASS alien arrives before gate unlocks
+PASS alien opens gate during animation
+PASS gate animation returns exploration
+PASS entry roar plays once and leaves attack windup time
+PASS boss repeats roar between attacks
+PASS full boss debug prepares entrance roar
+PASS full boss debug sounds entrance roar
+PASS full boss debug completes entrance without repeating sound
+PASS focused attack debug still starts immediately
+PASS finisher waits for input before impact
+PASS one press completes finisher
+PASS finisher keeps waiting without input
+PASS finisher resumes after delayed press
+PASS E starts full pet animation
+PASS Moro approaches hand without teleporting
+PASS repeated E does not restart petting
+PASS Moro relaxes while farmer bends down
+PASS petting finishes and restores poses
+PASS petting mirrors on left side
+PASS walking interrupts petting
+PASS dash interrupts petting immediately
+PASS attack interrupts petting immediately
+PASS damage interrupts petting
+PASS petting requires nearby dog
+PASS new run clears blood from clothes
+PASS lethal machete hit spawns alien blood and organs
+PASS alien debris lands and leaves persistent splashes
+PASS gore persists across continuous map
+PASS gore collections stay bounded
+PASS new game clears previous gore
+PASS closed gate blocks access to extension
+PASS crossing gate does not switch or restart scene
+PASS arena triggers only on arrival
+PASS world objects and animals persist across crossing
+PASS walking and camera stay continuous without fade
+PASS player can return to unchanged farm
+PASS boss charge uses extended-world coordinates
+PASS boss charge does not snap back to farm
+PASS tile cache covers far end independent of camera
+PASS heavy attack windup cannot damage
+PASS heavy attack damages after visible windup
+PASS buffered light input chains second cut
+PASS third cut has different animation and damage
+PASS machete knockback smashes enemy into crate
+PASS broken crate drops healing mate
+PASS intact crates block walking
+PASS corn is destructible
+PASS looter visibly steals potato sack
+PASS killing looter recovers potatoes and bonus
+PASS escaped looter is removed without kill reward
+PASS gunner announces shot before firing
+PASS gunner aim locks during warning
+PASS brute has longer readable windup
+PASS petting produces happy reaction
+PASS Moro cycles sniffing circling watching and exploring
+PASS throwing stick starts fetch
+PASS Moro brings stick back
+PASS walking through east gate loads field and preserves cows
+PASS field arrival starts final wave
+PASS ending clears playful Moro state
+PASS expansion debug loads gate
+PASS expansion debug loads field
+PASS expansion debug loads props
+PASS expansion debug loads looter
+PASS debug boss is in new arena
+PASS combat can be played through actual movement and attacks
+PASS debug panel freezes underlying scene
+PASS debug panel consumes gameplay input
+PASS debug scene loads: intro
+PASS debug scene loads: draw
+PASS debug scene loads: eyes
+PASS debug scene loads: tutorial
+PASS debug scene loads: wave1
+PASS debug scene loads: wave2
+PASS debug scene loads: wave3
+PASS debug scene loads: boss
+PASS debug scene loads: pulse
+PASS debug scene loads: charge
+PASS debug scene loads: death
+PASS debug scene loads: beam
+PASS debug scene loads: rage
+PASS debug scene loads: cow
+PASS debug scene loads: dog
+PASS debug scene loads: combat
+PASS debug charge forces correct boss attack
+PASS debug pulse forces correct boss attack
+PASS debug freeze stops simulation
+PASS debug single step advances exactly one frame
+PASS debug slow motion is quarter speed
+PASS debug god mode prevents damage
+PASS debug god mode disables correctly
+PASS debug restores health and rage
+PASS debug seek reconstructs cinematic state
+PASS debug repeat restarts last scene
+PASS debug kill starts real boss death
+PASS debug runs cannot write high scores
+PASS normal menu clears debug state
+PASS debug mouse activates intended scene
+180 checks passed
