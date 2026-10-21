@@ -1,0 +1,16 @@
+﻿Machete Cósmico — Demo
+Lechuga Estudios — Build 2026-10-21. Windows de 64 bits.
+
+Extraé todo el ZIP y abrí Machete-Cosmico-Demo.exe. No hace falta instalar LÖVE. Conservá las DLL al lado del ejecutable.
+
+CONTROLES POR DEFECTO (botones Xbox o posiciones equivalentes)
+Mover: WASD o flechas; stick izquierdo o cruceta.
+Corte / QTE: Espacio / X. Golpe fuerte: Q / Y. Esquiva: Shift / A.
+Furia: F / RB. Acariciar: E / B. Palito: R / LB.
+Pausa: Esc / Start. Omitir cinemática: Enter / Back.
+Menús: flechas o cruceta; Enter / A acepta; Esc / B vuelve.
+
+Podés reasignar controles en Opciones. F11 alterna pantalla completa.
+
+Esta demo contiene solo el primer nivel: La primera noche.
+Runtime LÖVE 11.5; licencias en LICENCIAS-LOVE.txt.

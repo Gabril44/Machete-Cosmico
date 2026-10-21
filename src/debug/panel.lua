@@ -37,6 +37,7 @@ local actions={
 local expansion={{'pet','Caricia a Moro','E repite la caricia; movimiento o combate la interrumpen.'},{'gore','Gore alienígena','Aliens débiles para probar sangre y restos con el machete.'},{'field','Maizal y galpón','Llegada a la nueva zona.'},{'gate','Portón abierto','Seguí a Moro hacia el este.'},{'props','Cajones y golpes','Rompé cajones o estampá aliens contra ellos.'},{'looter','Ladrón de papas','Alcanzalo antes de que se escape con la bolsa.'},{'dog','Moro y palito','E para acariciar, R para lanzar un palito.'}}
 table.insert(expansion,1,{'worried','Moro preocupado','Moro te acompaña con poca vida.'})
 table.insert(expansion,2,{'farewell','Antes del jefe','Última caricia antes de enfrentar al inspector.'})
+table.insert(expansion,3,{'endscreen','Pantalla final','Ver el cierre de la demo sin reproducir la cinemática.'})
 function Debug.new() return setmetatable({open=false,tab=1,selected=1,hold=false,speed=1,god=false,boxes=false,last='intro'},Debug) end
 function Debug:list() return self.tab==1 and scenes or self.tab==2 and actions or expansion end
 function Debug:mark(s) s.debugUsed=true end
@@ -55,6 +56,7 @@ function Debug:scene(s,id)
  else
   ready(s);self:mark(s)
   if id=='tutorial' then return
+  elseif id=='endscreen' then s.state='win';s.score=3360;s.lost=0;s.audio.stopAll()
   elseif id=='gore' then s.stage='sandbox';s.player.x=330;s.player.y=232;for i,k in ipairs({'raider','brute','gunner','looter'}) do local e=s:spawnEnemy(k);e.x=360+i*22;e.y=210+(i%2)*35;e.hp=1 end
   elseif id=='worried' then s.stage='sandbox';s.player.hp=25
   elseif id=='farewell' then s.player.x=940;s.dog.x=912;World.enter(s);s.enemies={};s.queue=0;s.stage='preboss';s.stageTime=0;s.lastPetStarted=false;s.cameraX=620

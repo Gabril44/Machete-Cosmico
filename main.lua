@@ -1,5 +1,3 @@
-local Debug=require('src.debug.panel')
-local debugPanel=Debug.new()
 local Game=require('src.game')
 local View=require('src.ui.view')
 local Audio=require('src.effects.audio')
@@ -52,7 +50,7 @@ function love.update(dt)
  if loading then if loadingDrawn then loadingDrawn=false;loadNext() end;return end
  Router.update(game,dt)
  if Options.open then return end
- debugPanel:update(game,math.min(dt,.04))
+ game:update(math.min(dt,.04))
 end
 function love.draw()
  love.graphics.setCanvas(canvas); love.graphics.clear(.025,.035,.065)
@@ -62,7 +60,7 @@ function love.draw()
   love.graphics.setColor(.18,.23,.22);love.graphics.rectangle('fill',180,210,280,4)
   love.graphics.setColor(.61,.78,.47);love.graphics.rectangle('fill',180,210,280*math.min(1,loadStep/3),4)
   loadingDrawn=true
- else View.draw(game); debugPanel:draw(game);if Options.open then Options.draw(View) end end
+ else View.draw(game); if Options.open then Options.draw(View) end end
  love.graphics.setCanvas(); love.graphics.setColor(1,1,1)
  love.graphics.clear(.012,.016,.023)
  scale,ox,oy=viewport()
@@ -77,7 +75,6 @@ function love.keypressed(k,scancode,isrepeat)
   if love.window.setFullscreen(not love.window.getFullscreen(),'desktop') then Input.fullscreen=love.window.getFullscreen();Input.save() end
   return
  end
- if debugPanel:key(game,k) then return end
  Router.input(game,'keyboard',k)
 end
 function love.mousepressed(x,y,b)
@@ -87,17 +84,12 @@ function love.mousepressed(x,y,b)
  Input.device='keyboard'
  if b==1 and Router.mouse(game,x,y) then return end
  if Options.open then return end
- if debugPanel:mouse(game,x,y,b) then return end
  if b==1 then game:key('space') elseif b==2 then game:key('q') end
 end
 function love.focus(f) if not f and game and game.state=='play' then game.state='pause' end end
 function love.gamepadpressed(j,b)
  if loading then return end
  Input.attach(j)
- if debugPanel.open and not Options.open then
-  local key=({a='return',b='escape',dpup='up',dpdown='down',dpleft='left',dpright='right'})[b]
-  if key then debugPanel:key(game,key) end;return
- end
  Router.input(game,'gamepad',b)
 end
 function love.gamepadaxis(j,axis,value)

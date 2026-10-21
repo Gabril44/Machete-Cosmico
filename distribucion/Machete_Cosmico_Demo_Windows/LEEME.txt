@@ -1,0 +1,13 @@
+MACHETE CÓSMICO — DEMO
+Developed by leshuggah
+
+Descomprimí toda la carpeta y abrí Machete_Cosmico_Demo.exe.
+No hace falta instalar LÖVE. Conservá las DLL junto al ejecutable.
+
+WASD: mover | ESPACIO: cortar | Q: golpe fuerte | SHIFT: esquivar
+F: furia | E: acariciar | R: palito | ESC: pausa | F11: pantalla completa
+Teclado y joystick configurables desde Opciones, en el inicio y en pausa.
+Consultá CONTROLES.md para los detalles.
+
+Esta versión incluye el primer nivel. Las opciones y récords se guardan
+por usuario, fuera de esta carpeta, con la identidad machete_cosmico_demo.

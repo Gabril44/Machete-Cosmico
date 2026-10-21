@@ -23,6 +23,7 @@ local function player(p,t) Actors.player(p,t) end
 local function enemy(e,t) Actors.enemy(e,t) end
 function V.draw(s)
  if s.state=='menu' then Title.draw(s,V);return end
+ if s.state=='win' then require('src.ui.ending').draw(s,V);return end
  g.push();if Cinema.active(s) then Cinema.camera(s) else g.translate(-math.floor(s.cameraX or 0),0) end;if s.shake>0 then g.translate(math.sin(s.time*110)*s.shake,math.cos(s.time*97)*s.shake*.5) end
  V.farm(s)
  Cinema.world(s,ufo,enemy)

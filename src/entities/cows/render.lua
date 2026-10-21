@@ -16,6 +16,7 @@ local function cow(c,s)
  local x,y=c.x,c.y-rise*51;shadow(x,c.y+4,16*(1-rise*.8))
  if c.active and not c.lost then
   color(C.orange,.65+.25*math.sin(s.time*7));g.ellipse('line',x,c.y+5,22,7)
+  text('!',x-2,y-29,C.ink,V.medium)
   text('!',x-3,y-30,C.orange,V.medium)
  end
  if c.progress>0 then
